@@ -8,6 +8,8 @@ body {
 .cabecalho{
     background-color: #2d2e32;
     color: aliceblue;
+    background: linear-gradient(to right, #2d2e32, #4f4f5c); 
+
 }
 
 .menu{
@@ -15,7 +17,7 @@ body {
     color: aliceblue;
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 70px;
 }
 
 .menu a {
@@ -56,12 +58,15 @@ body {
     margin-left: auto; /* Empurra para a direita */
  
 }
+/*Fim MENU*/
 
 /*AREA INICIAL*/
 .container {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 50px;
+    align-items: center;
     
 }
 
@@ -75,18 +80,24 @@ body {
 .titulo,
 .subtitulo,
 .paragrafo {
-    padding: 20px;
-    text-align: center;
+    
+    /*text-align: center;*/
    
 }
 
 .titulo {
     background-color: #67f5b1;
     color: #28292d;
-    align-items: center;
+    text-align: center;
+    flex: 1;
     height: 20px;
     width: 400px;
-   
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra em degradê */
+
+}
+
+.titulo h2{
+    align-items: center;
 }
 
 .subtitulo {
@@ -104,4 +115,64 @@ body {
     max-width: 100%;
     height: auto;
 }
+/*FIM AREA INICIAL*/
 
+/*PORTIFOLIO*/
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+    height 600px;
+  }
+  
+  .portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  /*FIM PORTIFOLIO*/
