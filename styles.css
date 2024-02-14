@@ -234,3 +234,60 @@ body {
     font-style: italic;
     font-size: 14px;
 }
+/*FIM DEPOIMENTO*/
+
+
+/* Estilos para o footer */
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #fff; /* Cor do texto */
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 30%; /* Largura de cada seção */
+    padding: 20px;
+    box-sizing: border-box; /* O preenchimento não aumentará a largura da seção */
+}
+
+.footer-section h2 {
+    color: #fff; /* Cor do título */
+    font-size: 1.2em; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+.footer-section p {
+    font-size: 0.9em; /* Tamanho da fonte do texto */
+    margin-bottom: 15px; /* Espaçamento inferior do texto */
+}
+
+.footer-section ul {
+    list-style: none; /* Remover os marcadores da lista */
+    padding: 0; /* Remover o preenchimento padrão da lista */
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.footer-section ul li a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+.footer-bottom {
+    background-color: #222; /* Cor de fundo da parte inferior do footer */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Alinhar o texto ao centro */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remover margem padrão */
+    font-size: 0.8em; /* Tamanho da fonte do texto */
+}
