@@ -117,6 +117,8 @@ body {
 }
 /*FIM AREA INICIAL*/
 
+
+
 /*PORTIFOLIO*/
 .portfolio {
     background-color: #f9f9f9;
@@ -176,3 +178,59 @@ body {
     opacity: 1;
   }
   /*FIM PORTIFOLIO*/
+
+  /*DEPOIMENTOS*/
+.testemunhas{
+    background-color: #28292d;
+    padding: 50px;
+    
+}
+
+.depoimento-h1{
+    color:#f9f9f9
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    background-color: #28292d;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.message {
+    flex: 1;
+}
+
+.message p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.client {
+    font-style: italic;
+    font-size: 14px;
+}
