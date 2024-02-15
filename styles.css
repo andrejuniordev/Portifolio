@@ -3,13 +3,14 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+   
 }
+
 /*MENU*/
 .cabecalho{
     background-color: #2d2e32;
     color: aliceblue;
     background: linear-gradient(to right, #2d2e32, #4f4f5c); 
-
 }
 
 .menu{
@@ -26,7 +27,6 @@ body {
     margin: 0 10px;  
 }
   
-
 .menu a:hover {
     color: #67f5b1; /* Cor ao passar o mouse */
 }
@@ -56,33 +56,27 @@ body {
 
 .social {
     margin-left: auto; /* Empurra para a direita */
- 
 }
 /*Fim MENU*/
 
 /*AREA INICIAL*/
+
 .container {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
-    align-items: center;
-    
+    align-items: center;  
+    height: 800px ;
+    padding: 0;
 }
+
 
 .conteudo {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-}
-
-.titulo,
-.subtitulo,
-.paragrafo {
-    
-    /*text-align: center;*/
-   
 }
 
 .titulo {
@@ -93,7 +87,6 @@ body {
     height: 20px;
     width: 400px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra em degradê */
-
 }
 
 .titulo h2{
@@ -101,9 +94,11 @@ body {
 }
 
 .subtitulo {
+    align-items: center;
 }
 
 .paragrafo {
+    align-items: center;
 }
 
 .imagem {
@@ -117,14 +112,13 @@ body {
 }
 /*FIM AREA INICIAL*/
 
-
-
 /*PORTIFOLIO*/
 .portfolio {
     background-color: #f9f9f9;
     padding: 80px 0;
     text-align: center;
-    height 600px;
+    height: 800px;
+    
   }
   
   .portfolio h2 {
@@ -132,7 +126,7 @@ body {
     margin-bottom: 40px;
   }
   
-  .container {
+  .container2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -149,6 +143,8 @@ body {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+
   }
   
   .portfolio-item img {
@@ -183,7 +179,7 @@ body {
 .testemunhas{
     background-color: #28292d;
     padding: 50px;
-    
+    height: 800px;
 }
 
 .depoimento-h1{
