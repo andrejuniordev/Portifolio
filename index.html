@@ -5,31 +5,24 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="/styles.css">
     <!--ICONES-->
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
 
 <body>
-    
-    <header class="cabecalho">
-         <!--MENU-->
-        <nav class="menu"> 
-            <div class="logo">
-                <a href="">Logo</a>
-            </div>
-            
-            <div class="menu_centro">
+    <!--MENU-->
+    <header>
+        <div class="center">
+            <a href="#">André Junior</a>
+            <div class="menu">
                 <a href="#">Inicio</a>
                 <a href="#">Blog</a>
                 <a href="#">Cursos</a>
+                <a href="#">Teste</a>
             </div>
-           
-            <div class="social">
-                <i class="fab fa-instagram"></i ><a href="#">Instagram</a>
-                <i class="fab fa-whatsapp"></i><a href="#">Whatsapp</a>
-                <i class="fab fa-github"></i><a href="#">GitHub</a>
-            </div> 
-        </nav>
-        
+        </div>
+    </header>
+
+    <!--Area principal-->
+    <section class="principal">
         <div class="container">
         
             <div class="conteudo">
@@ -50,7 +43,7 @@
                 <img src="/imagens/balanceamento-de-laptop-com-fundo-roxo-removebg-preview.png" alt="Laptop">
             </div>
         </div>
-    </header>
+    </section>
 
     <!--Parte do Portfolio-->
     <section class="portfolio">
@@ -113,7 +106,7 @@
           </div>
     </section>
       
-
+    <!--DEPOIMENTOS-->
     <section class="testemunhas">
         <div class="depoimento-h1">
             <h1>
@@ -180,9 +173,52 @@
         </div>
     </section>
 
+    <!--Redes Sociais-->
+
+    <section class="social">
+        <div>
+            <h2>
+                Me encontre em todas as redes
+            </h2>
+        </div>
+        
+        <div class="icones">
+
+            <ul>
+                <a href="#">
+                    <li style="--cor1: #FB3997; --cor2: #FECF12;">
+                        <span class="icon"><i class="bi bi-instagram"></i></span>
+                        <span class="text">Instagram</span>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li style="--cor1: #43FE84; --cor2: #2DBC5D;">
+                        <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                        <span class="text">Whatsapp</span>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li style="--cor1: #0e76a8; --cor2: #074c6d;">
+                        <span class="icon"><i class="bi bi-linkedin"></i></span>
+                        <span class="text">Linkedin</span>
+                    </li>
+                </a>
+
+                <a href="#">
+                    <li style="--cor1: #242121; --cor2: #353434;">
+                        <span class="icon"><i class="bi bi-github"></i></span>
+                        <span class="text">Github</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
     <!-- Rodapé da Página -->
     <footer>
-        <div class="footer-content">
+        <div class="footer- ">
             <div class="footer-section about">
                 <h2>Sobre Nós</h2>
                 <p>Descrição sobre a empresa ou informações adicionais.</p>
@@ -196,11 +232,11 @@
 
             <div class="footer-section links">
                 <h2>Links Rápidos</h2>
-                <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contato</a></li>
+                <ul class="ul_foter">
+                    <li class="li_foter"><a href="#">Página Inicial</a></li>
+                    <li class="li_foter"><a href="#">Serviços</a></li>
+                    <li class="li_foter"><a href="#">Depoimentos</a></li>
+                    <li class="li_foter"><a href="#">Contato</a></li>
                 </ul>
             </div>
         </div>

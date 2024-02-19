@@ -7,59 +7,51 @@ body {
 }
 
 /*MENU*/
-.cabecalho{
-    background-color: #2d2e32;
-    color: aliceblue;
-    background: linear-gradient(to right, #2d2e32, #4f4f5c); 
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    
+}
+
+.center a{
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold ;
+    margin-right: 15px;
+}
+
+header{
+    padding: 20px 0;
+    background-color: #28292d;
+}
+
+.logo{
+    width: 30px;
+   
 }
 
 .menu{
-    background-color: #28292d;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    height: 70px;
+    width: 50%;
+    text-align: right;
 }
 
-.menu a {
+.menu a{
+    color: #f9f9f9;
     text-decoration: none;
-    color: aliceblue;
-    margin: 0 10px;  
-}
-  
-.menu a:hover {
-    color: #67f5b1; /* Cor ao passar o mouse */
+    font-weight: bold ;
+    margin-right: 15px;
 }
 
-.menu a:hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #67f5b1; /* Cor da linha ao passar o mouse */
-    bottom: -2px; /* Posicionamento abaixo do texto */
-    left: 0;
-    transition: width 0.3s ease;
-}
-  
-.menu i {
-    margin-left: 1px;
-}
-  
-.logo {
-    margin-right: auto; /* Empurra para a esquerda */
-}
-
-.menu_centro {
-    margin: 0 auto; /* Centraliza no meio */
-}
-
-.social {
-    margin-left: auto; /* Empurra para a direita */
-}
 /*Fim MENU*/
 
 /*AREA INICIAL*/
+
+.principal{
+    background-color: #28292d;
+}
 
 .container {
     display: flex;
@@ -81,7 +73,7 @@ body {
 
 .titulo {
     background-color: #67f5b1;
-    color: #28292d;
+    color: #f9f9f9;
     text-align: center;
     flex: 1;
     height: 20px;
@@ -95,10 +87,12 @@ body {
 
 .subtitulo {
     align-items: center;
+    color: #f9f9f9;
 }
 
 .paragrafo {
     align-items: center;
+    color: #f9f9f9;
 }
 
 .imagem {
@@ -286,4 +280,73 @@ footer {
 .footer-bottom p {
     margin: 0; /* Remover margem padrão */
     font-size: 0.8em; /* Tamanho da fonte do texto */
+}
+/* Fim footer */
+
+/* Redes Sociais*/
+
+.icones{
+    height: 800px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+ul li{
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 8px 25px #28292d62;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.2s;
+}
+
+ul li:hover{
+    width: 190px;
+}
+
+ul li span{
+    position: absolute;
+}
+
+ul li .icon{
+    color: #28292d62;
+    font-size: 2.2em;
+    transition: .2s;
+}
+
+ul li .text{
+    color: #f9f9f9;
+    font-size: 18px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+ul li:hover .text{
+    transform: scale(1);
+}
+
+ul li:hover .icon{
+    transform: scale(0);
+}
+
+ul li::before{
+    content:'';
+    position:absolute ;
+    border-radius: 60px;
+    background-image: linear-gradient(45deg,var(--cor1),var(--cor2));
+    inset: 0;
+    opacity: 0;
+}
+
+ul li:hover::before{
+    opacity: 1;
 }
